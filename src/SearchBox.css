@@ -1,0 +1,43 @@
+.SearchBox {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Fix input visibility */
+.SearchBox .MuiTextField-root {
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Input box styling */
+.SearchBox .MuiOutlinedInput-root {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  color: #e2e8f0;
+}
+
+/* Input text color */
+.SearchBox input {
+  color: #ffffff !important;
+}
+
+/* Label color */
+.SearchBox label {
+  color: #94a3b8 !important;
+}
+
+/* Border color */
+.SearchBox .MuiOutlinedInput-notchedOutline {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Focus effect */
+.SearchBox .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #3b82f6;
+}
+
+/* Button spacing */
+.SearchBox button {
+  margin-top: 15px;
+  width: 100%;
+}

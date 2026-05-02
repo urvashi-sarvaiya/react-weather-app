@@ -1,0 +1,106 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark gradient background */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b, #020617);
+  color: #e2e8f0;
+}
+
+/* Center layout */
+#root {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container (glass dark card) */
+#root > div {
+  width: 380px;
+  padding: 35px 30px;
+  border-radius: 18px;
+
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(18px);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    inset 0 0 10px rgba(255, 255, 255, 0.03);
+
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+#root > div:hover {
+  transform: translateY(-6px);
+  box-shadow: 
+    0 20px 40px rgba(0, 0, 0, 0.8),
+    inset 0 0 12px rgba(255, 255, 255, 0.05);
+}
+
+/* Headings */
+h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  color: #f8fafc;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 14px;
+  color: #94a3b8;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+button {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1) !important;
+  border-radius: 8px !important;
+  font-weight: 600;
+  transition: all 0.3s ease !important;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #2563eb, #4f46e5) !important;
+}
+
+/* Text improvements */
+p, div {
+  color: #cbd5f5;
+}
+
+/* Smooth animation */
+#root > div {
+  animation: fadeIn 0.8s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  #root > div {
+    width: 90%;
+    padding: 25px;
+  }
+}
